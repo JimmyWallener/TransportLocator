@@ -39,7 +39,24 @@ public class getStations extends HttpServlet {
 		String to = request.getParameter("to") ;
 		
 		String search = "http://www.labs.skanetrafiken.se/v2.2/resultspage.asp?cmdaction=next&selPointFr=|" + from +"|0&selPointTo=|" + to + "|0";
-		
+		 out.print("<!DOCTYPE html>\r\n" + 
+	        		"<html>\r\n" + 
+	        		"<head>\r\n" + 
+	        		"<meta charset=\"UTF-8\">\r\n" + 
+	        		"<link rel=\"stylesheet\" href=\"Style.css\" type=\"text/css\">\r\n" + 
+	        		"<title>Travel</title>\r\n" + 
+	        		"</head>\r\n" + 
+	        		"<body>");
+	        out.print("<div class=\"header\">\r\n" + 
+	        		"		<h1>Transportation Schedule</h1>\r\n" + 
+	        		"		<h3>Home of Sustainable Travel | Start your journey now‎.</h3>\r\n" + 
+	        		"	</div>\r\n" + 
+	        		"\r\n" + 
+	        		"	<div class=\"topnav\">\r\n" + 
+	        		"		<a href=\"#\">Home</a> <a href=\"#\">Plan a journey</a> <a href=\"#\">Status\r\n" + 
+	        		"			updates</a> <a href=\"#\">Maps</a>\r\n" + 
+	        		"	</div>\r\n" + 
+	        		"");
 		try {
 			//Gets info from skanestrafiken
 			//System.out.println(search);
@@ -55,6 +72,7 @@ public class getStations extends HttpServlet {
 			    // print selected journeys on page
 			    if (node.getNodeType() == org.w3c.dom.Node.ELEMENT_NODE) {
 			        Element element = (Element) node;
+			       
 			        out.println("<br>");
 			        out.println("\nDep Time " + element.getElementsByTagName("DepDateTime").item(0).getTextContent());
 			        out.println("<br>");
@@ -67,6 +85,7 @@ public class getStations extends HttpServlet {
 			        out.println("\nTowards: " + element.getElementsByTagName("Towards").item(0).getTextContent());
 			        out.println("<br>");
 			        out.println("<br>");
+			        
 			    }
 			}
 		}catch(Exception exception)
@@ -75,7 +94,13 @@ public class getStations extends HttpServlet {
 	    }
 		// Calls start page for a new search(or joke)
 		out.print("<input type=\"button\" value=\"Search again\" onclick=\"window.location='index.jsp'\">");
-		 out.close();
+		out.println("	<div class=\"footer\">\r\n" + 
+        		"		<p>Footer</p>\r\n" + 
+        		"	</div>"
+        		+ "</body>\r\n" + 
+        		"</html>");
+		out.close();
+		 
 	}
 
 	/**
