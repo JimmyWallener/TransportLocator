@@ -133,6 +133,22 @@ function filterFunction() {
       a[i].style.display = "none";
     }
   }
-}</script>
+}
+(function() {
+	if (!localStorage.getItem('cookieconsent')) {
+		document.body.innerHTML += '\
+		<div class="cookieconsent" style="position:fixed;padding:20px;left:0;bottom:0;background-color:#000;color:#FFF;text-align:center;width:100%;z-index:99999;">\
+			This site uses cookies. If you enter, you agree to let us keep all cookies!  \
+			<a href="#" style="color:#CCCCCC;">I Understand, Pepehands!</a>\
+		</div>\
+		';
+		document.querySelector('.cookieconsent a').onclick = function(e) {
+			e.preventDefault();
+			document.querySelector('.cookieconsent').style.display = 'none';
+			localStorage.setItem('cookieconsent', true);
+		};
+	}
+})();	
+</script>
 </body>
 </html>
