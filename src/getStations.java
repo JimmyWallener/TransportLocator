@@ -45,8 +45,8 @@ public class getStations extends HttpServlet {
 		
 		try {
 			//Gets info from skanestrafiken
-			System.out.println(search);
-			Document doc = loadTestDocument(search);
+			//System.out.println(search);
+			Document doc = getTravelplan.loadTestDocument(search);
 	       
 			
 			NodeList nodeList = doc.getElementsByTagName("Journey");
@@ -88,10 +88,6 @@ public class getStations extends HttpServlet {
 		// TODO Auto-generated method stub
 		doGet(request, response);
 	}
-	private static Document loadTestDocument(String url) throws Exception {
-	    DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
-	    factory.setNamespaceAware(true);
-	    return factory.newDocumentBuilder().parse(new URL(url).openStream());
-	}
-}
+
+} 
 
