@@ -6,6 +6,8 @@
 <head>
 <meta charset="UTF-8">
 <link rel="stylesheet" href="Style.css" type="text/css">
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <title>Travel</title>
 </head>
 <body>
@@ -106,7 +108,14 @@ out.println(chuck.setChuck());
 	</div>
 
 	<div class="footer">
-		<p>Footer</p>
+		<p>Follow Us</p> 
+	<a href="#" class="fa fa-facebook"></a>
+	<a href="#" class="fa fa-twitter"></a>
+	<a href="#" class="fa fa-google"></a>
+	<a href="#" class="fa fa-linkedin"></a>
+	<a href="#" class="fa fa-youtube"></a>
+	<a href="#" class="fa fa-instagram">></a>
+		
 	</div>
 <script>
 
