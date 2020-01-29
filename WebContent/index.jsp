@@ -44,7 +44,7 @@ __________._______________________   ___ ___
         \/                       \/       \/                                                                                  
         -->
 	<div class="header">
-		<h1>Transportation Schedule</h1>
+		<h1>Transportation Locator in Skane</h1>
 		<h3>Home of Sustainable Travel | Start your journey now‎.</h3>
 	</div>
 
@@ -106,21 +106,23 @@ __________._______________________   ___ ___
 	<div class="row">
 		<div class="column side">
 			<h2>Plan A Trip</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
+			<p>Our journey planner allows you to plan journeys by public transport across Skane. If you want to know about bus or train routes in your area, search our wide range of local area maps.</p>
 		</div>
 
 		<div class="column middle">
-			<h2>Using Buses in Malmo</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-				Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque
-				ultricies, eget elementum magna tristique. Quisque vehicula, risus
-				eget aliquam placerat, purus leo tincidunt eros, eget luctus quam
-				orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-				Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque
-				ultricies, eget elementum magna tristique. Quisque vehicula, risus
-				eget aliquam placerat, purus leo tincidunt eros, eget luctus quam
-				orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+			<h2>Using public Transportation in Skane</h2>
+			<p>When you travel on a Skane train or bus, we want you to have the best
+				experience possible. If you haven't used our services before, or it
+				has been some time since your last trip, here are some tips on using
+				our services. Over 1 million people use Skane’s bus services every
+				day and your safety is our priority.
+				<br>
+				<br>
+				
+				 We are investing in improving
+				Skane's bus services, this includes making live information
+				available online at bus and train stops, customer service training for our
+				drivers and using the latest technology for new, greener train and buses.</p>
 		</div>
 
 		<div class="column side">
