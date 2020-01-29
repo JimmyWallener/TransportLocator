@@ -59,17 +59,41 @@ __________._______________________   ___ ___
 <div id="myDropdown" class="dropdown-content">
     From: <input type=text list=browsers placeholder="Search.." id="myInput" name="from" onkeyup="filterFunction()">
 	<datalist id=browsers >
-	   	<option value="80000">Malmö C</option>
-		<option value="81216">Lund C</option>
+	   	<option value="78114">Båstad station</option>
+		<option value="95006">Göteborg C</option>
+		<option value="13003">Halmstad C</option>
 		<option value="83241">Helsingborg C</option>
+		<option value="93070">Hässleholm C</option>
+		<option value="10007">Karlskrona C</option>
+		<option value="90042">Kristianstad C</option>
+		<option value="45007">Köpenhamn H</option>
+		<option value="82000">Landskrona Station</option>
+		<option value="81216">Lund C</option>
+		<option value="80000">Malmö C</option>
+		<option value="80040">Malmö Hyllie</option>
+		<option value="80140">Malmö Triangeln</option>
+		<option value="87071">Trelleborg C</option>
+		<option value="86239">Ystads station</option>
 		<option value="92010">Ängelholm station</option>
 	</datalist>
 	<br>
 	To: <input type=text list=browsers placeholder="Search.." id="myInput" name="to" onkeyup="filterFunction()">
 	<datalist id=browsers >
-	   	<option value="80000">Malmö C</option>
-		<option value="81216">Lund C</option>
+	   	<option value="78114">Båstad station</option>
+		<option value="95006">Göteborg C</option>
+		<option value="13003">Halmstad C</option>
 		<option value="83241">Helsingborg C</option>
+		<option value="93070">Hässleholm C</option>
+		<option value="10007">Karlskrona C</option>
+		<option value="90042">Kristianstad C</option>
+		<option value="45007">Köpenhamn H</option>
+		<option value="82000">Landskrona Station</option>
+		<option value="81216">Lund C</option>
+		<option value="80000">Malmö C</option>
+		<option value="80040">Malmö Hyllie</option>
+		<option value="80140">Malmö Triangeln</option>
+		<option value="87071">Trelleborg C</option>
+		<option value="86239">Ystads station</option>
 		<option value="92010">Ängelholm station</option>
 	</datalist>
 	<br>
