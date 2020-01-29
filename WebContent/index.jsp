@@ -53,28 +53,11 @@ __________._______________________   ___ ___
 
 	<br>
 <div class="input">	
-<form action="getStations" method="post"> 
-<div id="myDropdown" class="dropdown-content">
-    From: <input type=text list=browsers placeholder="Search.." id="myInput" name="from" onkeyup="filterFunction()">
-	<datalist id=browsers >
-	   	<option value="80000">Malmö C</option>
-		<option value="81216">Lund C</option>
-		<option value="83241">Helsingborg C</option>
-		<option value="92010">Ängelholm station</option>
-	</datalist>
-	<br>
-	To: <input type=text list=browsers placeholder="Search.." id="myInput" name="to" onkeyup="filterFunction()">
-	<datalist id=browsers >
-	   	<option value="80000">Malmö C</option>
-		<option value="81216">Lund C</option>
-		<option value="83241">Helsingborg C</option>
-		<option value="92010">Ängelholm station</option>
-	</datalist>
-	<br>
-	<br>
-	<input type="submit" value="Let's go">
-  </div>
-</form>
+	<form action="Travel" method="post">
+	
+		From : <input type="text" name="From"> To : <input type="text"
+			name="To"> <input type="submit" value="Go">
+	</form>
 </div>
 
 	<div class="row">
@@ -108,22 +91,6 @@ out.println(chuck.setChuck());
 	<div class="footer">
 		<p>Footer</p>
 	</div>
-<script>
 
-function filterFunction() {
-  var input, filter, ul, li, a, i;
-  input = document.getElementById("myInput");
-  filter = input.value.toUpperCase();
-  div = document.getElementById("myDropdown");
-  a = div.getElementsByTagName("option");
-  for (i = 0; i < a.length; i++) {
-    txtValue = a[i].textContent || a[i].innerText;
-    if (txtValue.toUpperCase().indexOf(filter) > -1) {
-      a[i].style.display = "";
-    } else {
-      a[i].style.display = "none";
-    }
-  }
-}</script>
 </body>
 </html>
