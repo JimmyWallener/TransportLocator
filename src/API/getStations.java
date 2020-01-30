@@ -64,7 +64,12 @@ public class getStations extends HttpServlet {
 	       
 			
 			NodeList nodeList = doc.getElementsByTagName("Journey");
-			
+			//Error handling it user does not enter a correct station from list
+			if (nodeList.getLength() == 0){
+		    	out.println("<br>");
+		    	out.println("Something went wrong, please try again and make sure that your selection is correct");
+		    	out.println("<br>");
+		    } 
 			for (int temp = 0; temp < nodeList.getLength(); temp++) {
 			    org.w3c.dom.Node node = nodeList.item(temp);
 			    out.println("<div class='main'>");
@@ -93,7 +98,7 @@ public class getStations extends HttpServlet {
 			        out.println("<br>");
 			        out.println("</div>");
 			        
-			    }
+			    } 
 			}
 		}catch(Exception exception)
 	    {
@@ -107,7 +112,14 @@ public class getStations extends HttpServlet {
 		
 		out.print("<input type=\"button\" class=\"myButton\" value=\"Search again\" onclick=\"window.location='index.jsp'\">");
 		out.println("	<div class=\"footer\">\r\n" + 
-        		"		<p>Footer</p>\r\n" + 
+        		"		<p>Follow Us</p> \r\n" + 
+		"<a href=\"#\" class=\"fa fa-facebook\"></a>"+
+		"<a href=\"#\" class=\"fa fa-twitter\"></a>"+
+		"<a href=\"#\" class=\"fa fa-google\"></a>"+
+		"<a href=\"#\" class=\"fa fa-linkedin\"></a>"+
+		"<a href=\"#\" class=\"fa fa-youtube\"></a>"+
+		"<a href=\"#\" class=\"fa fa-instagram\"></a>"+
+		
         		"	</div>"
         		+ "</body>\r\n" + 
         		"</html>");

@@ -6,6 +6,8 @@
 <head>
 <meta charset="UTF-8">
 <link rel="stylesheet" href="Style.css" type="text/css">
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <title>Travel</title>
 </head>
 <body>
@@ -42,7 +44,7 @@ __________._______________________   ___ ___
         \/                       \/       \/                                                                                  
         -->
 	<div class="header">
-		<h1>Transportation Schedule</h1>
+		<h1>Transportation Locator in Skane</h1>
 		<h3>Home of Sustainable Travel | Start your journey now‎.</h3>
 	</div>
 
@@ -58,9 +60,21 @@ __________._______________________   ___ ___
 	<div class="from">
     From: <input type=text list=browsers placeholder="Search.." id="myInput" name="from" onkeyup="filterFunction()">
 	<datalist id=browsers >
-	   	<option value="80000">Malmö C</option>
-		<option value="81216">Lund C</option>
+	   	<option value="78114">Båstad station</option>
+		<option value="95006">Göteborg C</option>
+		<option value="13003">Halmstad C</option>
 		<option value="83241">Helsingborg C</option>
+		<option value="93070">Hässleholm C</option>
+		<option value="10007">Karlskrona C</option>
+		<option value="90042">Kristianstad C</option>
+		<option value="45007">Köpenhamn H</option>
+		<option value="82000">Landskrona Station</option>
+		<option value="81216">Lund C</option>
+		<option value="80000">Malmö C</option>
+		<option value="80040">Malmö Hyllie</option>
+		<option value="80140">Malmö Triangeln</option>
+		<option value="87071">Trelleborg C</option>
+		<option value="86239">Ystads station</option>
 		<option value="92010">Ängelholm station</option>
 	</datalist>
 	<br>
@@ -68,9 +82,21 @@ __________._______________________   ___ ___
 	<div class="to">
 	To: <input type=text list=browsers placeholder="Search.." id="myInput" name="to" onkeyup="filterFunction()">
 	<datalist id=browsers >
-	   	<option value="80000">Malmö C</option>
-		<option value="81216">Lund C</option>
+	   	<option value="78114">Båstad station</option>
+		<option value="95006">Göteborg C</option>
+		<option value="13003">Halmstad C</option>
 		<option value="83241">Helsingborg C</option>
+		<option value="93070">Hässleholm C</option>
+		<option value="10007">Karlskrona C</option>
+		<option value="90042">Kristianstad C</option>
+		<option value="45007">Köpenhamn H</option>
+		<option value="82000">Landskrona Station</option>
+		<option value="81216">Lund C</option>
+		<option value="80000">Malmö C</option>
+		<option value="80040">Malmö Hyllie</option>
+		<option value="80140">Malmö Triangeln</option>
+		<option value="87071">Trelleborg C</option>
+		<option value="86239">Ystads station</option>
 		<option value="92010">Ängelholm station</option>
 	</datalist>
 	</div>
@@ -84,21 +110,25 @@ __________._______________________   ___ ___
 	<div class="row">
 		<div class="column side">
 			<h2>Plan A Trip</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
+			<p>Our journey planner allows you to plan journeys by public transport across Skane. If you want to know about bus or train routes in your area, search our wide range of local area maps.</p>
 		</div>
 
 		<div class="column middle">
-			<h2>Using Busses in Malmo</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-				Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque
-				ultricies, eget elementum magna tristique. Quisque vehicula, risus
-				eget aliquam placerat, purus leo tincidunt eros, eget luctus quam
-				orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-				Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque
-				ultricies, eget elementum magna tristique. Quisque vehicula, risus
-				eget aliquam placerat, purus leo tincidunt eros, eget luctus quam
-				orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+
+			<h2>Using public Transportation in Skane</h2>
+			<p>When you travel on a Skane train or bus, we want you to have the best
+				experience possible. If you haven't used our services before, or it
+				has been some time since your last trip, here are some tips on using
+				our services. Over 1 million people use Skane’s bus services every
+				day and your safety is our priority.
+				<br>
+				<br>
+				
+				 We are investing in improving
+				Skane's bus services, this includes making live information
+				available online at bus and train stops, customer service training for our
+				drivers and using the latest technology for new, greener train and buses.</p>
+
 		</div>
 
 		<div class="column side">
@@ -110,7 +140,13 @@ out.println(chuck.setChuck());
 	</div>
 
 	<div class="footer">
-		<p>Footer</p>
+		<p>Follow Us</p> 
+	<a href="#" class="fa fa-facebook"></a>
+	<a href="#" class="fa fa-twitter"></a>
+	<a href="#" class="fa fa-google"></a>
+	<a href="#" class="fa fa-linkedin"></a>
+	<a href="#" class="fa fa-youtube"></a>
+	<a href="#" class="fa fa-instagram"></a>	
 	</div>
 <script>
 
@@ -128,6 +164,22 @@ function filterFunction() {
       a[i].style.display = "none";
     }
   }
-}</script>
+}
+(function() {
+	if (!localStorage.getItem('cookieconsent')) {
+		document.body.innerHTML += '\
+		<div class="cookieconsent" style="position:fixed;padding:20px;left:0;bottom:0;background-color:#000;color:#FFF;text-align:center;width:100%;z-index:99999;">\
+			This site uses cookies. If you enter, you agree to let us keep all cookies!  \
+			<a href="#" style="color:#CCCCCC;">I Understand, Pepehands!</a>\
+		</div>\
+		';
+		document.querySelector('.cookieconsent a').onclick = function(e) {
+			e.preventDefault();
+			document.querySelector('.cookieconsent').style.display = 'none';
+			localStorage.setItem('cookieconsent', true);
+		};
+	}
+})();	
+</script>
 </body>
 </html>
