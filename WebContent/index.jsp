@@ -58,7 +58,7 @@ __________._______________________   ___ ___
 <form action="getStations" method="post"> 
 <div id="myDropdown" class="dropdown-content">
 	<div class="from">
-    From: <input type=text list=browsers placeholder="Search.." id="myInput" name="from" onkeyup="filterFunction()">
+    From: <input type=text list=browsers placeholder="Search.." id="myInput" name="from" onkeyup="filterFunction()" required>
 	<datalist id=browsers >
 	   	<option value="78114">Båstad station</option>
 		<option value="95006">Göteborg C</option>
@@ -80,7 +80,7 @@ __________._______________________   ___ ___
 	<br>
 	</div>
 	<div class="to">
-	To: <input type=text list=browsers placeholder="Search.." id="myInput" name="to" onkeyup="filterFunction()">
+	To: <input type=text list=browsers placeholder="Search.." id="myInput" name="to" onkeyup="filterFunction()" required>
 	<datalist id=browsers >
 	   	<option value="78114">Båstad station</option>
 		<option value="95006">Göteborg C</option>
