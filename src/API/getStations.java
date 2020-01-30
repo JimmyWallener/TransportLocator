@@ -67,8 +67,9 @@ public class getStations extends HttpServlet {
 			//Error handling it user does not enter a correct station from list
 			if (nodeList.getLength() == 0){
 		    	out.println("<br>");
-		    	out.println("Something went wrong, please try again and make sure that your selection is correct");
-		    	out.println("<br>");
+		    	out.println("<p class='center'>Something went wrong, please try again and make sure that your selection is correct</p>");
+		    	out.println("<br>	<br>	<br>	<br>	<br>	<br> 	<br>	<br>	<br>	<br>	<br>	<br>"
+		    			+ "	 <br>	<br>	<br>	<br>	<br>");
 		    } 
 			for (int temp = 0; temp < nodeList.getLength(); temp++) {
 			    org.w3c.dom.Node node = nodeList.item(temp);
@@ -89,11 +90,11 @@ public class getStations extends HttpServlet {
 			        out.println("<br>");
 			        out.println("\nArrival Time: " + ArrDateTime.substring(11, 16));
 			        out.println("<br>");
-			        out.println("\nPlatform: " + element.getElementsByTagName("NewDepPoint").item(0).getTextContent());
+			        out.println("\nPlatform: " + NewDepPoint);
 			        out.println("<br>");
-			        out.println("\nWith: " + element.getElementsByTagName("LineTypeName").item(0).getTextContent());
+			        out.println("\nWith: " + LineTypeName);
 			        out.println("<br>");
-			        out.println("\nTowards: " + element.getElementsByTagName("Towards").item(0).getTextContent());
+			        out.println("\nTowards: " + Towards);
 			        out.println("<br>");
 			        out.println("<br>");
 			        out.println("</div>");

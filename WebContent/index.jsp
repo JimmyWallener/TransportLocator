@@ -137,7 +137,7 @@ out.println(chuck.setChuck());
 %>
 		</div>
 	</div>
-
+	<br>	<br>	<br>	<br>
 	<div class="footer">
 		<p>Follow Us</p> 
 	<a href="#" class="fa fa-facebook"></a>
