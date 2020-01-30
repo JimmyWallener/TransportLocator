@@ -37,6 +37,12 @@ body {
 	background-color: #ddd;
 	color: black;
 }
+.from {
+	
+}
+.to{
+	
+}
 
 /* Create three unequal columns that floats next to each other */
 .column {
@@ -67,6 +73,13 @@ body {
 		width: 100%;
 	}	
 }
+.main {
+	border-radius: 5px;
+	background-color: lightgrey;
+	margin:10px;
+	border: 5px solid #2F4F4F;
+	padding:10px;
+}
 
 /* Style the footer */
 .footer {
@@ -90,3 +103,27 @@ img {
 .input{
 	text-align:center;
 }
+.myButton {
+	background-color:#2f4f4f;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	border-radius:5px;
+	border:1px solid #000333;
+	margin: 10px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Times New Roman;
+	font-size:17px;
+	padding:10px 30px;
+	text-decoration:none;
+}
+.myButton:hover {
+	background-color:#1d3d3d;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+        

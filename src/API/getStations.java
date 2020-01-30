@@ -67,16 +67,22 @@ public class getStations extends HttpServlet {
 			
 			for (int temp = 0; temp < nodeList.getLength(); temp++) {
 			    org.w3c.dom.Node node = nodeList.item(temp);
-			    out.println("\nTrip: " + (temp +1));
+			    out.println("<div class='main'>");
+			    out.println("\nSuggestion: " + (temp +1));
 			    
 			    // print selected journeys on page
 			    if (node.getNodeType() == org.w3c.dom.Node.ELEMENT_NODE) {
 			        Element element = (Element) node;
+			        String DepDateTime = element.getElementsByTagName("DepDateTime").item(0).getTextContent();
+			        String ArrDateTime = element.getElementsByTagName("ArrDateTime").item(0).getTextContent();
+			        String NewDepPoint = element.getElementsByTagName("NewDepPoint").item(0).getTextContent();
+			        String LineTypeName = element.getElementsByTagName("LineTypeName").item(0).getTextContent();
+			        String Towards = element.getElementsByTagName("Towards").item(0).getTextContent();
 			       
 			        out.println("<br>");
-			        out.println("\nDep Time " + element.getElementsByTagName("DepDateTime").item(0).getTextContent());
+			        out.println("\nDepartue Time " + DepDateTime.substring(11, 16));
 			        out.println("<br>");
-			        out.println("\nArr Time: " + element.getElementsByTagName("ArrDateTime").item(0).getTextContent());
+			        out.println("\nArrival Time: " + ArrDateTime.substring(11, 16));
 			        out.println("<br>");
 			        out.println("\nPlatform: " + element.getElementsByTagName("NewDepPoint").item(0).getTextContent());
 			        out.println("<br>");
@@ -85,6 +91,7 @@ public class getStations extends HttpServlet {
 			        out.println("\nTowards: " + element.getElementsByTagName("Towards").item(0).getTextContent());
 			        out.println("<br>");
 			        out.println("<br>");
+			        out.println("</div>");
 			        
 			    }
 			}
@@ -93,7 +100,12 @@ public class getStations extends HttpServlet {
 	        exception.printStackTrace();    
 	    }
 		// Calls start page for a new search(or joke)
-		out.print("<input type=\"button\" value=\"Search again\" onclick=\"window.location='index.jsp'\">");
+		out.println("<br>"
+				+ "  <br>"
+				+ "</div>"
+				+ "<div>");
+		
+		out.print("<input type=\"button\" class=\"myButton\" value=\"Search again\" onclick=\"window.location='index.jsp'\">");
 		out.println("	<div class=\"footer\">\r\n" + 
         		"		<p>Footer</p>\r\n" + 
         		"	</div>"

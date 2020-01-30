@@ -55,6 +55,7 @@ __________._______________________   ___ ___
 <div class="input">	
 <form action="getStations" method="post"> 
 <div id="myDropdown" class="dropdown-content">
+	<div class="from">
     From: <input type=text list=browsers placeholder="Search.." id="myInput" name="from" onkeyup="filterFunction()">
 	<datalist id=browsers >
 	   	<option value="80000">Malmö C</option>
@@ -63,6 +64,8 @@ __________._______________________   ___ ___
 		<option value="92010">Ängelholm station</option>
 	</datalist>
 	<br>
+	</div>
+	<div class="to">
 	To: <input type=text list=browsers placeholder="Search.." id="myInput" name="to" onkeyup="filterFunction()">
 	<datalist id=browsers >
 	   	<option value="80000">Malmö C</option>
@@ -70,9 +73,10 @@ __________._______________________   ___ ___
 		<option value="83241">Helsingborg C</option>
 		<option value="92010">Ängelholm station</option>
 	</datalist>
+	</div>
 	<br>
 	<br>
-	<input type="submit" value="Let's go">
+	<input type="submit" class="myButton" value="Let's go">
   </div>
 </form>
 </div>
@@ -84,7 +88,7 @@ __________._______________________   ___ ___
 		</div>
 
 		<div class="column middle">
-			<h2>Using Buses in Malmo</h2>
+			<h2>Using Busses in Malmo</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 				Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque
 				ultricies, eget elementum magna tristique. Quisque vehicula, risus
