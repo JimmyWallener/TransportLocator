@@ -38,10 +38,20 @@ body {
 	color: black;
 }
 .from {
-	
+	float: left;
+    display: inline;
+    margin-left: 27%;
+    border: 2px solid #2f4f4f;
+    padding: 2px;
+    border-radius: 2px;
 }
 .to{
-	
+	float: left;
+	display: inline;
+	margin-left: 10px;
+	border: 2px solid #2f4f4f;
+    padding: 2px;
+    border-radius: 2px;
 }
 
 /* Create three unequal columns that floats next to each other */
