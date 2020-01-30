@@ -45,6 +45,7 @@ public class getStations extends HttpServlet {
 	        		"<meta charset=\"UTF-8\">\r\n" + 
 	        		"<link rel=\"stylesheet\" href=\"Style.css\" type=\"text/css\">\r\n" + 
 			   	    "<link rel=\"stylesheet\"href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css\">" +
+
 	        		"<title>Travel</title>\r\n" + 
 	        		"</head>\r\n" + 
 	        		"<body>");
