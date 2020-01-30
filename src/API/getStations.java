@@ -64,7 +64,12 @@ public class getStations extends HttpServlet {
 	       
 			
 			NodeList nodeList = doc.getElementsByTagName("Journey");
-			
+			//Error handling it user does not enter a correct station from list
+			if (nodeList.getLength() == 0){
+		    	out.println("<br>");
+		    	out.println("Something went wrong, please try again and make sure that your selection is correct");
+		    	out.println("<br>");
+		    } 
 			for (int temp = 0; temp < nodeList.getLength(); temp++) {
 			    org.w3c.dom.Node node = nodeList.item(temp);
 			    out.println("\nTrip: " + (temp +1));
@@ -86,7 +91,7 @@ public class getStations extends HttpServlet {
 			        out.println("<br>");
 			        out.println("<br>");
 			        
-			    }
+			    } 
 			}
 		}catch(Exception exception)
 	    {
