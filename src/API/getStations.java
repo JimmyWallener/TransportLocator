@@ -44,20 +44,18 @@ public class getStations extends HttpServlet {
 	        		"<head>\r\n" + 
 	        		"<meta charset=\"UTF-8\">\r\n" + 
 	        		"<link rel=\"stylesheet\" href=\"Style.css\" type=\"text/css\">\r\n" + 
-			   	"<link rel=\"stylesheet\"href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css>" +
+			   	    "<link rel=\"stylesheet\"href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css\">" +
 	        		"<title>Travel</title>\r\n" + 
 	        		"</head>\r\n" + 
 	        		"<body>");
-	        out.print("<div class=\"header\">\r\n" + 
+	        out.print("<div class='header'>\r\n" + 
 	        		"		<h1>Transportation Schedule</h1>\r\n" + 
 	        		"		<h3>Home of Sustainable Travel | Start your journey now‎.</h3>\r\n" + 
 	        		"	</div>\r\n" + 
-	        		"\r\n" + 
 	        		"	<div class=\"topnav\">\r\n" + 
 	        		"		<a href=\"#\">Home</a> <a href=\"#\">Plan a journey</a> <a href=\"#\">Status\r\n" + 
 	        		"			updates</a> <a href=\"#\">Maps</a>\r\n" + 
-	        		"	</div>\r\n" + 
-	        		"");
+	        		"	</div>\r\n");
 		try {
 			//Gets info from skanestrafiken
 			//System.out.println(search);
